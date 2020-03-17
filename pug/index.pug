@@ -1,0 +1,64 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// header
+		include default/header.pug
+		// header
+		
+		// main-section
+		section.main-section
+			// slider-owl 
+			include default/slider-owl.pug
+			// slider-owl
+
+
+
+
+		h1 Элементы формы
+		hr
+		.form(style="width: 600px; margin: 60px auto;")
+			p
+				input.require(type="text" placeholder="Name")
+			p
+				input.check-mail(type="mail" placeholder="Mail")
+			p
+				input.require(type="tel" placeholder="Phone" class="phone-mask")
+			p
+				textarea.require(placeholder="Description")
+			p
+				input.require.input-file(type="file")
+			p
+				label Custom Select
+				select.style-select.require
+					each val in ["one","two","three","four","five","six","sevent","eight","nine","ten"]
+						option 
+							= val
+			div
+				h2 checkbox
+				each val in ["one","two","three"]
+					label.checkbox
+						= val
+						input.require(type="checkbox")
+						span
+			div
+				h2 Radio
+				each val in ["one","two","three"]
+					label.checkbox
+						= val
+						input(type="radio" name="type-1")
+						span
+			.btn-wc
+				input.btn.btn-send(type="submit" value="Send")
+		hr
+		h1 Map
+		include default/map.pug
+		// main-section
+		.stub
+		// footer
+		include default/footer.pug
+		// footer
+

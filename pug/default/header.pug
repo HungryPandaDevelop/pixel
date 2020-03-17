@@ -1,0 +1,24 @@
+header
+  .main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.jpg")
+    nav
+      ul
+        each val,index in ["Главная", "Новости", "Контакты"]
+          li 
+            a(href="#")
+              = val 
+    .feedback
+      div
+        a(href="tel:+71111111111" ) +7(111)111-11-11
+    .social
+      a(href="#")
+        img(src="../images/social/f-b.svg", alt="vk")
+      a(href="#")
+        img(src="../images/social/i-b.svg", alt="g")
+      a(href="#")
+        img(src="../images/social/v-b.svg", alt="v")
+    .btn-wc
+      a.btn(href="#") Ссылка
+    .hamburger 
