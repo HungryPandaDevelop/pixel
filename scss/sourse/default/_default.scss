@@ -15,7 +15,6 @@ html {
 	position: relative;
 }
 
-
 .wrapper {
 	position: relative;
 	overflow: hidden;
@@ -60,7 +59,11 @@ a {
 }
 
 
-
+b,
+strong {
+	font-weight: normal;
+	font-family: "medium";
+}
 
 h1,
 h2,
@@ -69,7 +72,7 @@ h4,
 h5,
 h6 {
 	font-weight: normal;
-	font-family: "semibold";
+	font-family: "bold";
 	margin: 0;
 	padding: 0;
 	line-height: 1.1;

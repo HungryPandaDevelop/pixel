@@ -1,0 +1,65 @@
+.main-section {
+  height: 100vh;
+
+  .slider-class,
+  .item {
+    height: 100%;
+  }
+
+  .pagination {
+    padding-left: 60px;
+
+    span {
+      border: 0;
+      transform-origin: bottom;
+      transition: ease-out 0.25s;
+      font-family: "bold";
+      font-size: $smallSize;
+      margin-right: 15px;
+      width: auto;
+      height: 28px;
+      vertical-align: bottom;
+      line-height: 3.5;
+
+      &.active+span {
+        font-size: $smallSize*2;
+        line-height: 1.5;
+      }
+
+      &.active,
+      &:hover {
+        background: none;
+        font-size: $smallSize*3;
+        line-height: 0.8;
+      }
+    }
+  }
+
+  .front-info {
+    position: relative;
+    width: 60%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out 0.5s;
+    padding: 17% 80px 0;
+
+    h2 {
+      font-size: $largeSize;
+      margin: 0 0 0px;
+    }
+
+    .arrow-btn {
+      margin: 30px 0;
+    }
+  }
+
+  .item {
+    &.active {
+      .front-info {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

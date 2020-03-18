@@ -1,0 +1,27 @@
+.rubric-section {
+  height: 740px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.rubric {
+  position: relative;
+
+  img {
+    @include boxSchemeImgFull();
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: $largeSize;
+    margin: 30px;
+  }
+}
+
+.rubric-1 {
+  grid-column: span 1;
+  grid-row: 1 / span 2;
+}

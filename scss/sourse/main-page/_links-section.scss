@@ -1,0 +1,46 @@
+.links-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  padding: 30px 40px;
+
+  .ls-item {
+    &:hover {
+      color: $violetColor;
+
+      .arrow-btn {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  h2 {
+    font-family: "Medium";
+    margin: 0 0 30px;
+  }
+
+  li {
+    margin: 0 0 20px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .arrow-btn {
+    margin-top: 15px;
+    transition: ease-out 0.25s;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

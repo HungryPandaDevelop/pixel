@@ -1,0 +1,36 @@
+.step_work-section {
+
+
+  h2 {
+    font-size: $commonSize;
+    padding: 40px;
+  }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sws-item {
+    padding: 30px 30px 60px;
+    text-align: center;
+    position: relative;
+
+    h3 {
+      font-family: "medium";
+      font-size: $middleSize;
+    }
+
+    .inner-item {
+      position: relative;
+    }
+
+    i {
+      font-style: normal;
+      @include positionElement(100%, 100%);
+      font-size: 250px;
+      font-family: "bold";
+      opacity: 0.05;
+    }
+  }
+}
