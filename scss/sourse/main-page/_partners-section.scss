@@ -1,0 +1,50 @@
+.partners-section {
+  min-height: 650px;
+  background: $blackColor;
+  color: $whiteColor;
+  padding-bottom: 40px;
+
+  h2 {
+    color: inherit;
+    padding-bottom: 60px;
+  }
+
+  .line {
+    max-width: 1640px;
+    margin: 0 auto 30px;
+    padding: 0 30px;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line-1,
+  .line-3 {
+    &>div {
+      display: flex;
+    }
+
+    img {
+      margin: auto;
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+
+  .line-2 {
+    &>div {
+      display: flex;
+    }
+
+    img {
+      margin: auto;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+}

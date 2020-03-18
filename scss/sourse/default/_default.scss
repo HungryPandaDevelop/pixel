@@ -87,6 +87,10 @@ h2 {
 	font-size: $middleSize;
 }
 
+h2.global {
+	font-size: $commonSize;
+	padding: 40px;
+}
 
 .main-grid {
 	display: grid;
