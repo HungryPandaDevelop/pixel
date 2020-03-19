@@ -1,16 +1,16 @@
 input,
 textarea,
 .custom-select {
-  padding: 4px 15px 5px;
-  border: 1px solid $blackColor;
+  padding: 4px 0px 5px;
+  border: 0;
+  border-bottom: 1px solid $blackColor;
   font: inherit;
-  border-radius: 4px;
   resize: none;
   width: 100%;
 
   &:focus {
     outline: 0;
-    box-shadow: 0 6px 25px rgba($blueColor, 0.2);
+    border-color: $violetColor;
   }
 }
 
@@ -37,7 +37,16 @@ textarea,
   margin-top: -30px;
   margin-bottom: 15px;
 
-  span {}
+  span {
+    display: block;
+    border-bottom: 1px solid;
+    padding: 4px 0px 5px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $violetColor;
+    }
+  }
 
   i {
     @include positionElement(15px, 15px, 0, 0, right, top, 2, none);
@@ -79,7 +88,6 @@ textarea,
 
     overflow: hidden;
     border-top: 0;
-    border-radius: 0 0 4px 4px;
     margin: 0;
 
     li {
@@ -95,7 +103,6 @@ textarea,
 
 
   &.active {
-    border-radius: 4px 4px 0 0;
     z-index: 3;
 
     ul {

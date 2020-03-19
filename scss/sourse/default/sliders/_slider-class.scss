@@ -1,7 +1,7 @@
 .slider-class {
   height: 300px;
   position: relative;
-  background: $grayColorSecond;
+  background: $grayColorLite;
 
   .item {
     @include positionElement(100%, 100%);

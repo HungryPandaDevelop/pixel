@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-    var tempFile = $("<div class='file-decorate'><span class='btn'>Выберете файл...</span><i></i></div>");
+    var tempFile = $("<div class='file-decorate'><span>Выберете файл...</span><i></i></div>");
 
     var ObjfieldFile = $(".input-file");
 
-    var flagFileMulti = 1;
+    var flagFileMulti = 0;
     $(".input-file").after(tempFile);
 
     $("body").on("click", ".file-decorate span", function () {
@@ -19,7 +19,7 @@ $(document).ready(function () {
             $(this).next().addClass("full");
             if (flagFileMulti == 1) {
                 $(this).next().after(ObjfieldFile.clone().val(""));
-                tempFile = $("<div class='file-decorate'><span class='btn'>Выберете файл...</span><i></i></div>");
+                tempFile = $("<div class='file-decorate'><span>Выберете файл...</span><i></i></div>");
                 $(this).next().next().after(tempFile.clone());
             }
         }
