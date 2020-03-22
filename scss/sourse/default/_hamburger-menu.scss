@@ -1,0 +1,66 @@
+.hamburger-menu {
+  @include positionElement(50%, 100%, 100%, 0, left, top, 4, flex, fixed);
+  background: $whiteColor;
+  padding: 3% 80px 0;
+  overflow-y: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: ease-out 0.5s;
+
+  &.show {
+    left: 50%;
+  }
+
+  .close {
+    @include positionElement(40px, 40px, 0, 0, right, top);
+    @include bgImageEl("../images/close-b.png");
+    margin: 30px;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $violetColor;
+  }
+
+  ul,
+  li {
+    display: block;
+  }
+
+  li {
+    margin: 0 0 15px;
+
+    a {
+      font-size: $commonSize;
+      font-family: "bold";
+
+
+    }
+  }
+
+  .additional-nav {
+    a {
+      font-size: $middleSizeMini;
+      font-family: "medium";
+    }
+  }
+
+  .feedback-menu {
+    font-size: $middleSizeMini;
+    font-family: "medium";
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+    a {
+      text-decoration: none;
+      vertical-align: middle;
+    }
+
+    img {
+      width: 36px;
+      margin-right: 30px;
+    }
+  }
+}

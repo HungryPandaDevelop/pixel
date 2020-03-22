@@ -160,6 +160,7 @@ $(document).ready(function () {
     });
 
     $(".element-btn").on("click", function (e) {
+
         e.preventDefault();
         var activeIndex = $(this).attr("data-showEl");
         console.log("obj", activeIndex);

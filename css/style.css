@@ -451,6 +451,76 @@ footer a {
 }
 
 /*-----footer-----*/
+/*-----hamburger-menu-----*/
+.hamburger-menu {
+  width: 50%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  position: fixed;
+  display: flex;
+  z-index: 4;
+  background: #ffffff;
+  padding: 3% 80px 0;
+  overflow-y: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: ease-out 0.5s;
+}
+.hamburger-menu.show {
+  left: 50%;
+}
+.hamburger-menu .close {
+  width: 40px;
+  height: 40px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  z-index: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../images/close-b.png");
+  margin: 30px;
+  cursor: pointer;
+}
+.hamburger-menu a:hover {
+  text-decoration: none;
+  color: #483697;
+}
+.hamburger-menu ul,
+.hamburger-menu li {
+  display: block;
+}
+.hamburger-menu li {
+  margin: 0 0 15px;
+}
+.hamburger-menu li a {
+  font-size: 48px;
+  font-family: "bold";
+}
+.hamburger-menu .additional-nav a {
+  font-size: 24px;
+  font-family: "medium";
+}
+.hamburger-menu .feedback-menu {
+  font-size: 24px;
+  font-family: "medium";
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.hamburger-menu .feedback-menu a {
+  text-decoration: none;
+  vertical-align: middle;
+}
+.hamburger-menu .feedback-menu img {
+  width: 36px;
+  margin-right: 30px;
+}
+
+/*-----hamburger-menu-----*/
 /*-----slider-owl-----*/
 .slider-owl {
   height: 300px;
@@ -929,4 +999,13 @@ footer a {
 }
 
 /*-----article-section-----*/
+/*-----_additional-section-----*/
+.additional-section {
+  padding: 30px 40px 90px;
+}
+.additional-section h2 {
+  padding-left: 0;
+}
+
+/*-----_additional-section-----*/
 /*--------------------main-page-----*/

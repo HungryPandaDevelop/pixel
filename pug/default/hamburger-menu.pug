@@ -1,0 +1,21 @@
+.hamburger-menu.element-show(data-showEl="0")
+  .close
+  nav
+    ul
+      each val in ["Создание сайтов","Дизайн","Разработка приложений","Продвижение","Контент","Анализ и аудит","Поддержка"]
+        li
+          a(href="#") 
+            = val
+    ul.additional-nav
+      each val in ["Цены","О компании","Благодарности","Статьи","Контакты"]
+        li
+          a(href="#") 
+            = val
+  .feedback-menu
+    a.link(href="#") Написать нам
+    .feedback-contacts
+      a(href="#")
+        img(src="../images/telegram.png")
+      a(href="#")
+        img(src="../images/whatsapp.png")
+      a(href="#") 8 (383) 333-33-33
