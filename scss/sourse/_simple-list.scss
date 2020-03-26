@@ -1,0 +1,49 @@
+.list-wrap {
+  padding: 0 0px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 80px;
+  margin: 0 0 30px;
+
+  .list-img,
+  .list-description {
+    grid-column: span 1;
+  }
+
+  .tags {
+    margin: 0 0 30px;
+
+    span,
+    a {
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .list-img {
+    position: relative;
+
+    img {
+      @include boxSchemeImgFull();
+    }
+  }
+
+  h2 {
+    font-size: $middleSize;
+    font-family: "medium";
+    height: 90px;
+    margin: 0 0 8px;
+  }
+
+  .data {
+    margin: 8px 0 0;
+    color: $grayColor;
+  }
+}

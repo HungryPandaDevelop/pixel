@@ -1,0 +1,103 @@
+.detail-head {
+  padding: 0 40px;
+
+  h1 {
+    margin: 0 0 15px;
+  }
+
+  .tags {
+    margin: 0 0 15px;
+
+    span {
+      margin-right: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .data {
+    color: $grayColor;
+    margin: 0 0 15px;
+  }
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 40px;
+}
+
+.col-text {
+  grid-column: 1/ span 7;
+}
+
+.col-img {
+  grid-column: 9/ span3;
+
+  img {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+}
+
+
+.full-img {
+  grid-column: 1/ span 12;
+  margin: 60px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+/*porfolio-about*/
+.head-full-section {
+  height: 100vh;
+  background: $blackColor;
+  position: relative;
+  padding: 150px 40px 0;
+
+  img {
+    @include boxSchemeImgFull();
+    opacity: 0.5;
+  }
+
+  .hf-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .front-billet {
+    @include positionElement(30%, 100%, 0, 0, right);
+    background: $whiteColor;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+.about-page {
+  h1 {
+    text-align: right;
+    padding-right: 25%;
+  }
+}
+
+.img-full {
+  width: 100%;
+}
+
+
+/*porfolio-about*/

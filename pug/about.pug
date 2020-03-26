@@ -1,0 +1,51 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// popup
+		
+		// hamburger-menu
+		include default/hamburger-menu.pug
+		// hamburger-menu
+		
+		// popup
+ 
+		// header
+		include default/header.pug
+		// header
+		.about-page
+			.head-full-section
+				img(src="../images/img-1.jpg")
+				.hf-content
+					h1 О компании
+				.front-billet
+					.fb-inner
+						div Компания была основана в 2018 году, и с тех пор успешно работает на IT и маркетинговом рынке, 
+						a.btn(href="#") Перейти
+			img.img-full(src="../images/img-1.jpg")
+			.default-wrap
+				h2 В проектах мы применяем мультидисциплинарный подход, основанный на синергии стратегии, брендинга, дизайна и цифровых технологий.
+			// rubric-section
+			include main-page/rubric-section.pug
+			// rubric-section
+
+			// links-section
+			include main-page/links-section.pug
+			// links-section
+
+			// price-commercial
+			include default/price-commercial.pug
+			// price-commercial
+
+		// partners-section
+		include main-page/partners-section.pug
+		// partners-section
+		.feedback-section
+			h2.global Контакты
+			// feedback-contacts
+			include default/feedback-contacts.pug
+			// feedback-contacts
+
