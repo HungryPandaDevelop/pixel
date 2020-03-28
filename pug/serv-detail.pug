@@ -1,0 +1,52 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// popup
+		
+		// hamburger-menu
+		include default/hamburger-menu.pug
+		// hamburger-menu
+		
+		// popup
+  
+		// header
+		include default/header.pug
+		// header
+		.head-full-section
+			img(src="../images/img-1.jpg")
+			.hf-content
+				h1 Создание сайтов. Мы создаем работающий продукт, который нужен вам и вашему бизнесу. Высоконагруженные сервисы мы работаем с корпорациями и небольшими стартапами, популярными продуктами и эксклюзивными сервисами, массовыми событиями и личностями. Наши решения открывают простор для воображения и новые пути для развития бренд-коммуникации.
+		.serv-detail
+			.sd-topic
+				h2 Что получают наши клиенты, работая с нами.
+			.sd-content
+				.sdc-grid
+					each val in ["","","","","","","",""]
+						.services-item
+							h3 Заголовок блока
+							div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+		.serv-detail
+			.sd-topic
+				h2 Как мы работаем.
+			.sd-content.step_work-section
+				.sdc-grid
+					each val,index in ["Свяжитесь с нами","Встреча","Оценка реализации","Аналитика бизнеса","Предложение решений","Техническое задание","Оценка реализации","Аналитика бизнеса","Предложение решений","Техническое задание"]
+						.sws-item
+							i 
+								= index
+							.inner-item
+								h3 
+									= val
+								p После того, как будщий заказчик ознакоситься с нашими работами, и примет решение саязаться с нами по номеру, почте, или любыми способами указанными на странице Контакты, мы договариваемя о встрече. 
+		// portfolio-section
+		include main-page/portfolio-section.pug
+		// portfolio-section
+		// feedback-contacts
+		.feedback-section
+			h2.global Контакты
+			include default/feedback-contacts.pug
+		// feedback-contacts

@@ -173,6 +173,29 @@ h2.global {
   background-image: url("../images/arr-next-violet-lite.png");
 }
 
+.btn-back {
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0px 5px 50px;
+  background: none;
+  font: inherit;
+  font-size: 24px;
+  display: inline-block;
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  transition: ease-out 0.25s;
+  background-position: left 13px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-image: url("../images/arr-back-black-lite.png");
+}
+.btn-back:hover {
+  color: #483697;
+  padding-right: 60px;
+  background-image: url("../images/arr-back-violet-lite.png");
+}
+
 .more-link {
   position: relative;
   text-decoration: none;
@@ -1107,7 +1130,7 @@ footer a {
   width: 100%;
 }
 
-/*porfolio-about*/
+/*porfolio-about-servises*/
 .head-full-section {
   height: 100vh;
   background: #1a1a1a;
@@ -1154,7 +1177,28 @@ footer a {
   width: 100%;
 }
 
-/*porfolio-about*/
+.serv-detail {
+  display: grid;
+  padding: 40px;
+  grid-template-columns: repeat(12, 1fr);
+}
+.serv-detail .sd-topic {
+  grid-column: span 4;
+  display: flex;
+}
+.serv-detail .sd-topic h2 {
+  margin: auto;
+}
+.serv-detail .sd-content {
+  grid-column: span 8;
+}
+.serv-detail .sdc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+}
+
+/*porfolio-about-servises*/
 /*-----simple-detail-----*/
 /*-----simple-list-----*/
 .list-wrap {
@@ -1467,4 +1511,53 @@ footer a {
 }
 
 /*-----price-page-----*/
+/*-----thanks-page-----*/
+.thanks-container {
+  display: grid;
+  padding: 0 40px;
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+}
+.thanks-container .thanks-item {
+  grid-column: span 1;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.thanks-container .thanks-item img {
+  width: 100%;
+}
+.thanks-container .thanks-item h2 {
+  font-family: "medium";
+  font-size: 24px;
+  padding: 12px 0 8px;
+}
+
+.thanks-detail {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  padding: 0 40px;
+  font-family: "medium";
+}
+.thanks-detail .img-container {
+  grid-column: span 5;
+}
+.thanks-detail .content-container {
+  grid-column: span 7;
+  display: flex;
+  font-size: 24px;
+}
+.thanks-detail .content-container .data {
+  margin: 110px 0 0;
+}
+.thanks-detail .content-container h1 {
+  font-size: 36px;
+  margin: 8px 0 25px;
+}
+.thanks-detail .inner-content {
+  margin: auto;
+}
+
+/*-----thanks-page-----*/
 /*--------------------contetn-page-----*/

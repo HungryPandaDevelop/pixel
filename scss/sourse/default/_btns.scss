@@ -20,6 +20,28 @@
   }
 }
 
+.btn-back {
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0px 5px 50px;
+  background: none;
+  font: inherit;
+  font-size: $middleSizeMini;
+  display: inline-block;
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  transition: ease-out 0.25s;
+
+  @include bgImageEl ("../images/arr-back-black-lite.png", 40px, left 13px);
+
+  &:hover {
+    color: $violetColor;
+    padding-right: 60px;
+    background-image: url("../images/arr-back-violet-lite.png");
+  }
+}
+
 .more-link {
   position: relative;
   text-decoration: none;

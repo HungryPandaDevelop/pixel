@@ -1,0 +1,27 @@
+doctype html
+html
+	body
+		// head
+		include default/head.pug 
+		// head
+
+		// popup
+		
+		// hamburger-menu
+		include default/hamburger-menu.pug
+		// hamburger-menu
+		
+		// popup
+
+		// header
+		include default/header.pug
+		// header
+		.stub
+		.detail-head
+			h1 Благодарности нам
+		.thanks-container
+			each val in ["","","","","","","",""]
+				.thanks-item
+					img(src="../images/g1.jpg")
+					h2 ООО СД "Альфа капитал"
+					.data 16 июня 2019 г.

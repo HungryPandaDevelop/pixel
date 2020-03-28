@@ -57,7 +57,7 @@
   }
 }
 
-/*porfolio-about*/
+/*porfolio-about-servises*/
 .head-full-section {
   height: 100vh;
   background: $blackColor;
@@ -99,5 +99,30 @@
   width: 100%;
 }
 
+.serv-detail {
+  display: grid;
+  padding: 40px;
+  grid-template-columns: repeat(12, 1fr);
 
-/*porfolio-about*/
+  .sd-topic {
+    grid-column: span 4;
+    display: flex;
+
+    h2 {
+      margin: auto;
+    }
+  }
+
+  .sd-content {
+    grid-column: span 8;
+  }
+
+  .sdc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
+}
+
+
+/*porfolio-about-servises*/
