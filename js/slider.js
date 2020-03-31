@@ -79,8 +79,7 @@ $(document).ready(function () {
 
   slider.movementNext();
 
-  var windowWidth = $(window).width();
-  slider.objEl.find(".slider-img").width(windowWidth);
+
 
 
 
@@ -96,5 +95,14 @@ $(document).ready(function () {
     slider.count = $(this).index() - 1;
 
     slider.movementNext();
+  });
+
+  function chnageWidth() {
+    var windowWidth = $(window).width();
+    slider.objEl.find(".slider-img").width(windowWidth);
+  };
+  chnageWidth();
+  $(window).on("resize", function () {
+    chnageWidth();
   });
 });

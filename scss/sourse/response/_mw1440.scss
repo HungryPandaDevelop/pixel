@@ -1,0 +1,46 @@
+$middleSize: 26px;
+$largeSize: 40px;
+$commonSize: 38px;
+$middleSizeMini: 18px;
+
+h1,
+.main-section .front-info h2,
+.rubric h3 {
+  font-size: $largeSize;
+}
+
+.hamburger-menu li a,
+.services-container h2,
+h2.global {
+  font-size: $commonSize;
+}
+
+.thanks-detail .content-container h1,
+.list-item h2,
+.step_work-section .sws-item h3,
+h2 {
+  font-size: $middleSize;
+}
+
+.thanks-detail .content-container,
+.thanks-container .thanks-item h2,
+.hamburger-menu .additional-nav a,
+.hamburger-menu .feedback-menu,
+.feedback-section .feedback-connections a,
+.services-item .item-price,
+.sn-item h3,
+.article-section .as-item h3,
+.feedback-section .feedback-information h3 {
+  font-size: $middleSizeMini;
+}
+
+.hamburger-menu .feedback-menu img {
+  width: 26px;
+}
+
+/*mainpage*/
+.main-section .front-info {
+  padding-top: 10%;
+}
+
+/*mainpage*/

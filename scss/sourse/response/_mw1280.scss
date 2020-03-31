@@ -1,0 +1,26 @@
+$standartSize: 14px;
+$commonSize: 28px;
+
+body,
+html {
+  font-size: $standartSize;
+}
+
+.hamburger-menu li a,
+.services-container h2,
+h2.global {
+  font-size: $commonSize;
+}
+
+
+/*price*/
+.deadline-el {
+
+  height: calc(65% - 25px);
+}
+
+.services-grid {
+  grid-column-gap: 20px;
+}
+
+/*price*/

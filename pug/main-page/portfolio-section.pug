@@ -1,5 +1,7 @@
 section.portfolio-section
-  each val in ["1","2","3","4","5","6"]
-    .ps-item
-      img(src="../images/portfolio/"+val+".png", alt="img")
+  h2.global.desktop-hidden Портфолио
+  .owl-portfolio.owl-carousel
+    each val in ["1","2","3","4","5","6"]
+      .ps-item
+        img(src="../images/portfolio/"+val+".png", alt="img")
   

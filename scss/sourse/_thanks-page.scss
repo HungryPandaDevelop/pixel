@@ -31,6 +31,10 @@
 
   .img-container {
     grid-column: span 5;
+
+    img {
+      width: 100%;
+    }
   }
 
   .content-container {
