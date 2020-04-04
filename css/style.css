@@ -152,6 +152,11 @@ h2.global {
   display: none;
 }
 
+.owl-portfolio.owl-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /*-----defaul-----*/
 /*-----btns-----*/
 .btn {
@@ -863,10 +868,12 @@ footer a {
 /*-----rubric-section-----*/
 /*-----links-section-----*/
 .links-section {
+  padding: 30px 40px;
+}
+.links-section .owl-links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
-  padding: 30px 40px;
 }
 .links-section .ls-item:hover {
   color: #483697;
@@ -900,10 +907,6 @@ footer a {
 
 /*-----links-section-----*/
 /*-----portfolio-section-----*/
-.portfolio-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 .portfolio-section .ps-item {
   grid-column: span 1;
   padding-bottom: 50%;
@@ -1513,6 +1516,10 @@ footer a {
   position: absolute;
 }
 
+.services-grid.owl-ariticle {
+  display: grid;
+}
+
 /*-----price-page-----*/
 /*-----thanks-page-----*/
 .thanks-container {
@@ -1563,6 +1570,14 @@ footer a {
 }
 .thanks-detail .inner-content {
   margin: auto;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+.btn-desktop {
+  display: block;
 }
 
 /*-----thanks-page-----*/

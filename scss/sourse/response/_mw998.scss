@@ -9,6 +9,10 @@ h1,
   font-size: 18px;
 }
 
+.default-wrap {
+  padding: 0 15px;
+}
+
 .thanks-detail .content-container h1,
 .list-item h2,
 .step_work-section .sws-item h3,
@@ -30,8 +34,9 @@ header .main-grid {
 }
 
 h2.global {
-
+  position: relative;
   padding: 40px 15px 15px;
+  z-index: 2;
 }
 
 .hamburger-menu li a,
@@ -183,6 +188,7 @@ h2.global {
   .feedback-connections {
     display: block;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -251,3 +257,158 @@ h2.global {
     overflow: visible;
   }
 }
+
+/*about*/
+.head-full-section .front-billet {
+  left: 0;
+  width: 100%;
+}
+
+.about-page h1 {
+  text-align: left;
+}
+
+.price-commercial {
+  padding: 0 15px 30px;
+
+  .commercial-grid {
+    display: block;
+
+    .cg-item {
+      margin-bottom: 30px;
+    }
+
+
+  }
+
+  .commercial-bg {
+    left: 0;
+    width: 100%;
+  }
+}
+
+
+/*about*/
+/*list*/
+.default-wrap h1 {
+  margin: 0 0 30px;
+}
+
+.stub {
+  height: 90px;
+}
+
+.list-item {
+  display: block;
+  margin: 0 0 60px;
+
+  h2 {
+    padding: 30px 0 15px;
+  }
+
+  .list-img {
+    height: 150px;
+  }
+}
+
+.btn-more {
+
+  margin: 30px 0;
+  padding: 15px 0;
+  font-size: 16px;
+
+  i {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*list*/
+/*servises*/
+.services-grid {
+  display: block;
+}
+
+.services-container {
+  padding: 0 15px;
+  position: relative;
+  overflow-x: auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.price-section {}
+
+.services-table {
+  width: 1240px;
+}
+
+/*servises*/
+/*detail*/
+.serv-detail {
+  display: block;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+
+  .services-item {
+    height: auto;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+  .sd-topic h2 {
+    padding: 30px 0 15px;
+    margin: 0;
+  }
+
+  .sdc-grid {
+    display: block;
+  }
+
+  .step_work-section .sws-item {
+    padding: 30px 30px 60px 0px;
+  }
+}
+
+.detail-head,
+.detail-content {
+  padding: 0 15px;
+  display: block;
+}
+
+.full-img {
+  margin: 0 0 30px;
+}
+
+/*detail*/
+/*.thanks-container*/
+.thanks-container {
+  display: block;
+}
+
+.thanks-detail {
+  display: block;
+  padding: 0 15px;
+
+  .content-container .data {
+    margin: 30px 0 0;
+  }
+}
+
+.btn-mobile {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  background-size: 30px;
+  background-position: left 11px;
+}
+
+.btn-desktop {
+  display: none;
+}
+
+/*.thanks-container*/

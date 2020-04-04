@@ -1,6 +1,5 @@
 .portfolio-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
 
   .ps-item {
     grid-column: span 1;

@@ -131,3 +131,8 @@ h2.global {
 .desktop-hidden {
 	display: none;
 }
+
+.owl-portfolio.owl-carousel {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}

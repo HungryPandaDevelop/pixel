@@ -81,6 +81,10 @@ h2.global {
     font-size: 18px;
   }
 
+  .default-wrap {
+    padding: 0 15px;
+  }
+
   .thanks-detail .content-container h1,
 .list-item h2,
 .step_work-section .sws-item h3,
@@ -102,7 +106,9 @@ h2 {
   }
 
   h2.global {
+    position: relative;
     padding: 40px 15px 15px;
+    z-index: 2;
   }
 
   .hamburger-menu li a,
@@ -233,6 +239,7 @@ h2.global {
   .feedback-section .feedback-connections {
     display: block;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .partners-section {
@@ -289,5 +296,141 @@ h2.global {
   .owl-links.owl-carousel .owl-stage-outer {
     overflow: visible;
   }
+
+  /*about*/
+  .head-full-section .front-billet {
+    left: 0;
+    width: 100%;
+  }
+
+  .about-page h1 {
+    text-align: left;
+  }
+
+  .price-commercial {
+    padding: 0 15px 30px;
+  }
+  .price-commercial .commercial-grid {
+    display: block;
+  }
+  .price-commercial .commercial-grid .cg-item {
+    margin-bottom: 30px;
+  }
+  .price-commercial .commercial-bg {
+    left: 0;
+    width: 100%;
+  }
+
+  /*about*/
+  /*list*/
+  .default-wrap h1 {
+    margin: 0 0 30px;
+  }
+
+  .stub {
+    height: 90px;
+  }
+
+  .list-item {
+    display: block;
+    margin: 0 0 60px;
+  }
+  .list-item h2 {
+    padding: 30px 0 15px;
+  }
+  .list-item .list-img {
+    height: 150px;
+  }
+
+  .btn-more {
+    margin: 30px 0;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+  .btn-more i {
+    width: 20px;
+    height: 20px;
+  }
+
+  /*list*/
+  /*servises*/
+  .services-grid {
+    display: block;
+  }
+
+  .services-container {
+    padding: 0 15px;
+    position: relative;
+    overflow-x: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .services-table {
+    width: 1240px;
+  }
+
+  /*servises*/
+  /*detail*/
+  .serv-detail {
+    display: block;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  .serv-detail .services-item {
+    height: auto;
+  }
+  .serv-detail .services-item h3 {
+    font-size: 18px;
+  }
+  .serv-detail .sd-topic h2 {
+    padding: 30px 0 15px;
+    margin: 0;
+  }
+  .serv-detail .sdc-grid {
+    display: block;
+  }
+  .serv-detail .step_work-section .sws-item {
+    padding: 30px 30px 60px 0px;
+  }
+
+  .detail-head,
+.detail-content {
+    padding: 0 15px;
+    display: block;
+  }
+
+  .full-img {
+    margin: 0 0 30px;
+  }
+
+  /*detail*/
+  /*.thanks-container*/
+  .thanks-container {
+    display: block;
+  }
+
+  .thanks-detail {
+    display: block;
+    padding: 0 15px;
+  }
+  .thanks-detail .content-container .data {
+    margin: 30px 0 0;
+  }
+
+  .btn-mobile {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 18px;
+    background-size: 30px;
+    background-position: left 11px;
+  }
+
+  .btn-desktop {
+    display: none;
+  }
+
+  /*.thanks-container*/
 }
 /*-----998-----*/

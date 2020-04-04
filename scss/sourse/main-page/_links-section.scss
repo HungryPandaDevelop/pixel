@@ -1,8 +1,12 @@
 .links-section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 40px;
+
   padding: 30px 40px;
+
+  .owl-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+  }
 
   .ls-item {
     &:hover {
