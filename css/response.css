@@ -127,7 +127,6 @@ h2.global {
   }
 
   .hamburger {
-    background-color: #fff;
     width: 50px;
     height: 50px;
     background-size: 80%;
@@ -241,6 +240,12 @@ h2.global {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .feedback-section .fc-item {
+    margin: 0 0 15px;
+  }
+  .feedback-section .fc-item a {
+    margin-top: 6px;
+  }
 
   .partners-section {
     padding-bottom: 0;
@@ -254,6 +259,10 @@ h2.global {
   }
   .partners-section .line:last-child {
     margin-bottom: 0;
+  }
+  .partners-section .line > div {
+    display: block;
+    width: 100%;
   }
 
   .step_work-section {
@@ -431,5 +440,68 @@ h2.global {
   }
 
   /*.thanks-container*/
+  .owl-links .owl-stage-outer {
+    padding-top: 30px;
+  }
+  .owl-links .owl-nav {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 0%;
+  }
+  .owl-links .owl-prev,
+.owl-links .owl-next {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 0;
+  }
+  .owl-links .owl-prev {
+    left: 0;
+    background-image: url(../images/arr-back-black-lite.png);
+  }
+  .owl-links .owl-next {
+    right: 0;
+    background-image: url(../images/arr-next-black-lite.png);
+  }
+
+  .owl-ariticle.owl-carousel,
+.owl-step_work.owl-carousel,
+.owl-portfolio.owl-carousel {
+    position: relative;
+    z-index: 3;
+  }
+  .owl-ariticle.owl-carousel .owl-nav,
+.owl-step_work.owl-carousel .owl-nav,
+.owl-portfolio.owl-carousel .owl-nav {
+    position: absolute;
+    width: 50px;
+    top: -35px;
+    right: 0%;
+    z-index: 5;
+  }
+  .owl-ariticle.owl-carousel .owl-prev,
+.owl-ariticle.owl-carousel .owl-next,
+.owl-step_work.owl-carousel .owl-prev,
+.owl-step_work.owl-carousel .owl-next,
+.owl-portfolio.owl-carousel .owl-prev,
+.owl-portfolio.owl-carousel .owl-next {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 0;
+  }
+  .owl-ariticle.owl-carousel .owl-prev,
+.owl-step_work.owl-carousel .owl-prev,
+.owl-portfolio.owl-carousel .owl-prev {
+    left: 0;
+    background-image: url(../images/arr-back-black-lite.png);
+  }
+  .owl-ariticle.owl-carousel .owl-next,
+.owl-step_work.owl-carousel .owl-next,
+.owl-portfolio.owl-carousel .owl-next {
+    right: 0;
+    background-image: url(../images/arr-next-black-lite.png);
+  }
 }
 /*-----998-----*/

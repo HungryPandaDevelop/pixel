@@ -9,14 +9,15 @@
 
 .services-table {
   margin-top: 90px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(9, 1fr);
   display: grid;
   position: relative;
 
   .sn-name {
     grid-column: 1/ span 3;
-    padding: 15px 0 10px;
+    padding: 15px 0 0px;
+    height: 70px;
   }
 
   .line {
@@ -34,6 +35,7 @@
     width: 100%;
     text-align: center;
     top: -30px;
+    right: 50%;
   }
 
   .th-price-1 {

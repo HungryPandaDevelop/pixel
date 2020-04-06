@@ -136,3 +136,7 @@ h2.global {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
+
+.wow {
+	visibility: hidden;
+}

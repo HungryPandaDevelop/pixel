@@ -157,6 +157,10 @@ h2.global {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.wow {
+  visibility: hidden;
+}
+
 /*-----defaul-----*/
 /*-----btns-----*/
 .btn {
@@ -453,7 +457,7 @@ header {
   top: 0;
   position: absolute;
   display: block;
-  z-index: 3;
+  z-index: 4;
   height: 90px;
 }
 
@@ -802,7 +806,7 @@ footer a {
   vertical-align: bottom;
   line-height: 3.5;
 }
-.main-section .pagination span.active + span {
+.main-section .pagination span.prev-active, .main-section .pagination span.active + span {
   font-size: 24px;
   line-height: 1.5;
 }
@@ -969,16 +973,15 @@ footer a {
   max-width: 1640px;
   margin: 0 auto 30px;
   padding: 0 30px;
+  text-align: center;
 }
-.partners-section .line-1,
-.partners-section .line-2,
-.partners-section .line-3 {
-  display: flex;
-  justify-content: space-between;
+.partners-section .line > div {
+  display: inline-block;
+  vertical-align: middle;
 }
 .partners-section .line-1 > div,
 .partners-section .line-3 > div {
-  display: flex;
+  width: 24%;
 }
 .partners-section .line-1 img,
 .partners-section .line-3 img {
@@ -987,7 +990,7 @@ footer a {
   max-width: 160px;
 }
 .partners-section .line-2 > div {
-  display: flex;
+  width: 40%;
 }
 .partners-section .line-2 img {
   margin: auto;
@@ -1268,14 +1271,15 @@ footer a {
 
 .services-table {
   margin-top: 90px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(9, 1fr);
   display: grid;
   position: relative;
 }
 .services-table .sn-name {
   grid-column: 1/span 3;
-  padding: 15px 0 10px;
+  padding: 15px 0 0px;
+  height: 70px;
 }
 .services-table .line {
   position: absolute;
@@ -1291,6 +1295,7 @@ footer a {
   width: 100%;
   text-align: center;
   top: -30px;
+  right: 50%;
 }
 .services-table .th-price-1 {
   grid-column: 4/span 1;

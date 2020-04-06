@@ -62,7 +62,10 @@ $(document).ready(function () {
       $(".slider-class .item.active").addClass("active-prev");
       this.objEl.removeClass("active").eq(this.count).addClass("active");
 
-      slider.objWrap.find(".pagination span").removeClass("active");
+      slider.objWrap.find(".pagination span").removeClass("active prev-active");
+      if (this.count != 0) {
+        slider.objWrap.find(".pagination span").eq((this.count - 1)).addClass("prev-active");
+      }
       slider.objWrap.find(".pagination span").eq(this.count).addClass("active");
 
       clearTimeout(removeActive);

@@ -23,6 +23,7 @@
       vertical-align: bottom;
       line-height: 3.5;
 
+      &.prev-active,
       &.active+span {
         font-size: $smallSize*2;
         line-height: 1.5;
