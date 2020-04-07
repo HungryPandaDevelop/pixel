@@ -1,5 +1,5 @@
 .hamburger-menu {
-  @include positionElement(50%, 100%, 100%, 0, left, top, 4, flex, fixed);
+  @include positionElement(50%, 100%, 100%, 0, left, top, 5, flex, fixed);
   background: $whiteColor;
   padding: 3% 80px 0;
   overflow-y: auto;

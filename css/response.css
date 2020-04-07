@@ -297,7 +297,11 @@ h2.global {
   }
 
   .owl-links.owl-carousel {
-    width: 80%;
+    width: 100%;
+    display: block;
+  }
+  .owl-links.owl-carousel .ls-item {
+    margin-bottom: 30px;
   }
   .owl-links.owl-carousel .inner-item {
     text-align: left;
@@ -440,31 +444,6 @@ h2.global {
   }
 
   /*.thanks-container*/
-  .owl-links .owl-stage-outer {
-    padding-top: 30px;
-  }
-  .owl-links .owl-nav {
-    position: absolute;
-    width: 50px;
-    top: 0;
-    left: 0%;
-  }
-  .owl-links .owl-prev,
-.owl-links .owl-next {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    margin: 0;
-  }
-  .owl-links .owl-prev {
-    left: 0;
-    background-image: url(../images/arr-back-black-lite.png);
-  }
-  .owl-links .owl-next {
-    right: 0;
-    background-image: url(../images/arr-next-black-lite.png);
-  }
-
   .owl-ariticle.owl-carousel,
 .owl-step_work.owl-carousel,
 .owl-portfolio.owl-carousel {
@@ -502,6 +481,21 @@ h2.global {
 .owl-portfolio.owl-carousel .owl-next {
     right: 0;
     background-image: url(../images/arr-next-black-lite.png);
+  }
+
+  .head-full-section {
+    background: #fff;
+  }
+  .head-full-section .img-box {
+    height: 80%;
+    background: #000;
+    opacity: 1;
+  }
+  .head-full-section .img-box img {
+    opacity: 0.8;
+  }
+  .head-full-section .front-billet {
+    background: none;
   }
 }
 /*-----998-----*/

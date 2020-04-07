@@ -23,12 +23,7 @@ $(document).ready(function () {
       dots: false,
       nav: true
     });
-    var linksOwl = $('.owl-links');
-    linksOwl.owlCarousel({
-      items: 1,
-      dots: false,
-      nav: true
-    });
+
   }
 
 

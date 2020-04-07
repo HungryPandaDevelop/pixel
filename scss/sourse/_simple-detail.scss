@@ -64,9 +64,14 @@
   position: relative;
   padding: 150px 40px 0;
 
-  img {
+  .img-box {
     @include boxSchemeImgFull();
     opacity: 0.5;
+
+    img {
+      @include positionElement(100%, 100%);
+      object-fit: cover;
+    }
   }
 
   .hf-content {

@@ -66,6 +66,7 @@ h2.global {
   width: 100%;
   padding: 15px;
 
+
   .close {
     margin: 15px;
     width: 30px;
@@ -259,7 +260,12 @@ h2.global {
 }
 
 .owl-links.owl-carousel {
-  width: 80%;
+  width: 100%;
+  display: block;
+
+  .ls-item {
+    margin-bottom: 30px;
+  }
 
   .inner-item {
     text-align: left;
@@ -424,38 +430,6 @@ h2.global {
 
 /*.thanks-container*/
 
-.owl-links {
-  .owl-stage-outer {
-    padding-top: 30px;
-  }
-
-  .owl-nav {
-    position: absolute;
-    width: 50px;
-    top: 0;
-    left: 0%;
-  }
-
-  .owl-prev,
-  .owl-next {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    margin: 0;
-  }
-
-  .owl-prev {
-    left: 0;
-    background-image: url(../images/arr-back-black-lite.png);
-  }
-
-  .owl-next {
-    right: 0;
-    background-image: url(../images/arr-next-black-lite.png);
-  }
-
-
-}
 
 .owl-ariticle.owl-carousel,
 .owl-step_work.owl-carousel,
@@ -487,5 +461,23 @@ h2.global {
   .owl-next {
     right: 0;
     background-image: url(../images/arr-next-black-lite.png);
+  }
+}
+
+.head-full-section {
+  background: #fff;
+
+  .img-box {
+    height: 80%;
+    background: #000;
+    opacity: 1;
+
+    img {
+      opacity: 0.8;
+    }
+  }
+
+  .front-billet {
+    background: none;
   }
 }

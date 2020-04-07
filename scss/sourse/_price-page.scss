@@ -222,6 +222,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: ease-out 0.25s;
+
+  &:hover {
+    background: $violetColor;
+    color: $whiteColor;
+  }
 
   h3,
   .item-price {
@@ -265,6 +271,11 @@
       h3 {
         text-align: center;
         margin: 0 0 15px;
+      }
+
+      &:hover {
+        background: $violetColor;
+        color: $whiteColor;
       }
     }
   }
