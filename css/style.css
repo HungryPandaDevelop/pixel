@@ -848,6 +848,7 @@ footer a {
 .rubric {
   position: relative;
   background: #483697;
+  overflow: hidden;
 }
 .rubric img {
   left: 0;
@@ -867,6 +868,7 @@ footer a {
 }
 .rubric:hover img {
   opacity: 0.5;
+  transform: scale(1.1);
 }
 
 .rubric-1 {
@@ -1088,6 +1090,9 @@ footer a {
 }
 .article-section .as-item:hover {
   background: #483697;
+  color: #ffffff;
+}
+.article-section .as-item:hover .more-link:hover {
   color: #ffffff;
 }
 .article-section .as-item:hover h3 {

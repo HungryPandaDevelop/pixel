@@ -28,6 +28,10 @@
       background: $violetColor;
       color: $whiteColor;
 
+      .more-link:hover {
+        color: $whiteColor;
+      }
+
       h3 {
         color: inherit;
       }

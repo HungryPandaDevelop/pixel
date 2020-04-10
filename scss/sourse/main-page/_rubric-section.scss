@@ -8,6 +8,7 @@
 .rubric {
   position: relative;
   background: $violetColor;
+  overflow: hidden;
 
   img {
     @include boxSchemeImgFull();
@@ -25,6 +26,7 @@
   &:hover {
     img {
       opacity: 0.5;
+      transform: scale(1.1);
     }
   }
 }
